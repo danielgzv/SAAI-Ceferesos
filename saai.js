@@ -22,7 +22,7 @@ function FormularioSolicitud() {
   };
 
   return (
-    <div style={{ padding: '20px', fontFamily: 'Arial', maxWidth: '400px' }}>
+    <div style={{ padding: '25px', fontFamily: 'Arial', maxWidth: '400px' }}>
       <h2>Sistema SAAI-CEFERESOS (Fase 3)</h2>
       
       {!enviado ? (
@@ -45,7 +45,7 @@ function FormularioSolicitud() {
           <button type="submit" style={{ cursor: 'pointer' }}>Enviar Solicitud Final</button>
         </form>
       ) : (
-        <div style={{ color: 'green', border: '1px solid green', padding: '10px' }}>
+        <div style={{ color: 'blue', border: '1px solid green', padding: '10px' }}>
           <h3>¡Solicitud Procesada!</h3>
           <p>El registro para <strong>{datos.nombre}</strong> ha sido enviado al Centro de Documentación con éxito.</p>
           <button onClick={() => setEnviado(false)}>Nueva Solicitud</button>
